@@ -14,6 +14,10 @@
 #import "SubscribeViewController.h"
 #import "TechnologyViewController.h"
 
+
+#define screenWidth [UIScreen mainScreen].bounds.size.width
+#define screenHeight [UIScreen mainScreen].bounds.size.height
+
 @interface ViewController ()
 @property (nonatomic, weak) UIScrollView *titlScrollView;
 @property (nonatomic, weak) UIScrollView *contentScrollView;
@@ -39,6 +43,8 @@
     
     // set all titles
     [self setupTitles];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
  
 }
 
@@ -122,9 +128,16 @@
             [self titlePressed:button];
         }
     }
-    self.titlScrollView.contentSize = CGSizeMake(count * btnWidth, btnHeight);
+    self.titlScrollView.contentSize = CGSizeMake(count * btnWidth, 0);
     self.titlScrollView.showsHorizontalScrollIndicator = NO;
     self.titlScrollView.showsVerticalScrollIndicator = NO;
+    
+    self.contentScrollView.contentSize = CGSizeMake(count * screenWidth, 0);
+    self.contentScrollView.showsHorizontalScrollIndicator = NO;
+    self.contentScrollView.showsVerticalScrollIndicator = NO;
+
+    //FIXME
+    
 }
 
 #pragma title pressed
@@ -136,14 +149,14 @@
  
     // get child viewcontroller
     UIViewController *vc = self.childViewControllers[i];
-    CGFloat vcX = i * [UIScreen mainScreen].bounds.size.width;
-    vc.view.frame = CGRectMake(vcX, 0, [UIScreen mainScreen].bounds.size.width, self.contentScrollView.bounds.size.height);
+    CGFloat vcX = i * screenWidth;
+    vc.view.frame = CGRectMake(vcX, 0, screenWidth, self.contentScrollView.bounds.size.height);
     [self.contentScrollView addSubview:vc.view];
     
     // set content scrollview offset
     self.contentScrollView.contentOffset = CGPointMake(vcX, 0);
     
-     
+    
     
 }
 
