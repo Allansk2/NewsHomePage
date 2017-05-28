@@ -237,7 +237,38 @@
 // set title scale
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    // calculate left and right button index
+    NSInteger leftIndex = scrollView.contentOffset.x / screenWidth;
+    NSInteger rightIndex = leftIndex + 1;
     
+    UIButton *leftBtn = self.titlBtns[leftIndex];
+    
+    UIButton *rightBtn;
+    if (rightIndex < self.titlBtns.count) {
+        rightBtn = self.titlBtns[rightIndex];
+    }
+    
+    // calculate scale
+    CGFloat scaleRight = scrollView.contentOffset.x / screenWidth;
+    scaleRight -= leftIndex;
+    
+    CGFloat scaleLeft = 1 - scaleRight;
+    
+    // convert scale 0 ~ 1 to 1 ~ 1.3
+//    scaleLeft = scaleLeft * 0.3 + 1;
+//    scaleRight = scaleRight * 0.3 + 1;
+ 
+    // set button title scale
+    leftBtn.transform = CGAffineTransformMakeScale(scaleLeft * 0.3 + 1, scaleLeft * 0.3 + 1);
+    rightBtn.transform = CGAffineTransformMakeScale(scaleRight * 0.3 + 1, scaleRight * 0.3 + 1);
+
+    // set button title color
+    UIColor *leftColor = [UIColor colorWithRed:scaleLeft green:0 blue:0 alpha:1.0];
+    UIColor *rightColor = [UIColor colorWithRed:scaleRight green:0 blue:0 alpha:1.0];
+
+    [leftBtn setTitleColor:leftColor forState:UIControlStateNormal];
+    [rightBtn setTitleColor:rightColor forState:UIControlStateNormal];
+
 }
 
 
