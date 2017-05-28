@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D0D9F881EDB2C5C00BB16E9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D9F871EDB2C5C00BB16E9 /* HomeViewController.m */; };
 		5D4C962E1EDA94D8006D12C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C962D1EDA94D8006D12C8 /* main.m */; };
 		5D4C96311EDA94D8006D12C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C96301EDA94D8006D12C8 /* AppDelegate.m */; };
 		5D4C96341EDA94D8006D12C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C96331EDA94D8006D12C8 /* ViewController.m */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D0D9F861EDB2C5C00BB16E9 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		5D0D9F871EDB2C5C00BB16E9 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		5D4C96291EDA94D8006D12C8 /* news.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = news.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D4C962D1EDA94D8006D12C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5D4C962F1EDA94D8006D12C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +85,8 @@
 				5D4C96321EDA94D8006D12C8 /* ViewController.h */,
 				5D4C96331EDA94D8006D12C8 /* ViewController.m */,
 				5D4C96351EDA94D8006D12C8 /* Main.storyboard */,
+				5D0D9F861EDB2C5C00BB16E9 /* HomeViewController.h */,
+				5D0D9F871EDB2C5C00BB16E9 /* HomeViewController.m */,
 				5D4C96381EDA94D8006D12C8 /* Assets.xcassets */,
 				5D4C963A1EDA94D8006D12C8 /* LaunchScreen.storyboard */,
 				5D4C963D1EDA94D8006D12C8 /* Info.plist */,
@@ -191,6 +196,7 @@
 				5D4C96341EDA94D8006D12C8 /* ViewController.m in Sources */,
 				5D4C964A1EDA95E0006D12C8 /* TopNewsViewController.m in Sources */,
 				5D4C96501EDA95FE006D12C8 /* VideoViewController.m in Sources */,
+				5D0D9F881EDB2C5C00BB16E9 /* HomeViewController.m in Sources */,
 				5D4C96531EDA9608006D12C8 /* SocialViewController.m in Sources */,
 				5D4C964D1EDA95EF006D12C8 /* HotViewController.m in Sources */,
 				5D4C96561EDA9615006D12C8 /* SubscribeViewController.m in Sources */,

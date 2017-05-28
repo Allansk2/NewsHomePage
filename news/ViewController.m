@@ -7,12 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "TopNewsViewController.h"
-#import "HotViewController.h"
-#import "VideoViewController.h"
-#import "SocialViewController.h"
-#import "SubscribeViewController.h"
-#import "TechnologyViewController.h"
 
 
 #define screenWidth [UIScreen mainScreen].bounds.size.width
@@ -23,10 +17,21 @@
 @property (nonatomic, weak) UIScrollView *contentScrollView;
 @property (nonatomic, weak) UIButton *selectedBtn;
 @property (nonatomic, strong) NSMutableArray *titlBtns;
+@property (nonatomic, assign) BOOL initialLoad;
+
 
 @end
 
 @implementation ViewController
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    if (!_initialLoad) {
+        // set all titles
+        [self setupTitles];
+        _initialLoad = YES;
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -39,15 +44,8 @@
     // add content scroll view
     [self setContentScrollView];
     
-    // add all child view controllers
-    [self setupChildViewControllers];
-    
-    // set all titles
-    [self setupTitles];
-    
     self.automaticallyAdjustsScrollViewInsets = NO;
-    
-    //
+ 
  
 }
 
@@ -86,34 +84,6 @@
     self.contentScrollView.delegate = self;
 }
 
-#pragma add all child view controllers
--(void)setupChildViewControllers
-{
-    TopNewsViewController *topVC = [[TopNewsViewController alloc] init];
-    topVC.title = @"Top News";
-    [self addChildViewController:topVC];
-    
-    HotViewController *hotVC = [[HotViewController alloc] init];
-    hotVC.title = @"Hot";
-    [self addChildViewController:hotVC];
-    
-    VideoViewController *videoVC = [[VideoViewController alloc] init];
-    videoVC.title = @"Video";
-    [self addChildViewController:videoVC];
-    
-    SocialViewController *socialVC = [[SocialViewController alloc] init];
-    socialVC.title = @"Social";
-    [self addChildViewController:socialVC];
-    
-    SubscribeViewController *subscribeVC = [[SubscribeViewController alloc] init];
-    subscribeVC.title = @"Subscribe";
-    [self addChildViewController:subscribeVC];
-    
-    TechnologyViewController *technologyVC = [[TechnologyViewController alloc] init];
-    technologyVC.title = @"Tech";
-    [self addChildViewController:technologyVC];
-    
-}
 
 #pragma setup titles
 -(void)setupTitles
