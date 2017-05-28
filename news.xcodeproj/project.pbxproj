@@ -13,6 +13,12 @@
 		5D4C96371EDA94D8006D12C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D4C96351EDA94D8006D12C8 /* Main.storyboard */; };
 		5D4C96391EDA94D8006D12C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D4C96381EDA94D8006D12C8 /* Assets.xcassets */; };
 		5D4C963C1EDA94D8006D12C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D4C963A1EDA94D8006D12C8 /* LaunchScreen.storyboard */; };
+		5D4C964A1EDA95E0006D12C8 /* TopNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C96491EDA95E0006D12C8 /* TopNewsViewController.m */; };
+		5D4C964D1EDA95EF006D12C8 /* HotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C964C1EDA95EF006D12C8 /* HotViewController.m */; };
+		5D4C96501EDA95FE006D12C8 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C964F1EDA95FE006D12C8 /* VideoViewController.m */; };
+		5D4C96531EDA9608006D12C8 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C96521EDA9608006D12C8 /* SocialViewController.m */; };
+		5D4C96561EDA9615006D12C8 /* SubscribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C96551EDA9615006D12C8 /* SubscribeViewController.m */; };
+		5D4C96591EDA9626006D12C8 /* TechnologyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C96581EDA9626006D12C8 /* TechnologyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,18 @@
 		5D4C96381EDA94D8006D12C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D4C963B1EDA94D8006D12C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D4C963D1EDA94D8006D12C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D4C96481EDA95E0006D12C8 /* TopNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopNewsViewController.h; sourceTree = "<group>"; };
+		5D4C96491EDA95E0006D12C8 /* TopNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopNewsViewController.m; sourceTree = "<group>"; };
+		5D4C964B1EDA95EF006D12C8 /* HotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotViewController.h; sourceTree = "<group>"; };
+		5D4C964C1EDA95EF006D12C8 /* HotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotViewController.m; sourceTree = "<group>"; };
+		5D4C964E1EDA95FE006D12C8 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		5D4C964F1EDA95FE006D12C8 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		5D4C96511EDA9608006D12C8 /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
+		5D4C96521EDA9608006D12C8 /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
+		5D4C96541EDA9615006D12C8 /* SubscribeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscribeViewController.h; sourceTree = "<group>"; };
+		5D4C96551EDA9615006D12C8 /* SubscribeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscribeViewController.m; sourceTree = "<group>"; };
+		5D4C96571EDA9626006D12C8 /* TechnologyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TechnologyViewController.h; sourceTree = "<group>"; };
+		5D4C96581EDA9626006D12C8 /* TechnologyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TechnologyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,7 @@
 		5D4C962B1EDA94D8006D12C8 /* news */ = {
 			isa = PBXGroup;
 			children = (
+				5D4C96471EDA95AD006D12C8 /* ChildViewControllers */,
 				5D4C962F1EDA94D8006D12C8 /* AppDelegate.h */,
 				5D4C96301EDA94D8006D12C8 /* AppDelegate.m */,
 				5D4C96321EDA94D8006D12C8 /* ViewController.h */,
@@ -77,6 +96,25 @@
 				5D4C962D1EDA94D8006D12C8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D4C96471EDA95AD006D12C8 /* ChildViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5D4C96481EDA95E0006D12C8 /* TopNewsViewController.h */,
+				5D4C96491EDA95E0006D12C8 /* TopNewsViewController.m */,
+				5D4C964B1EDA95EF006D12C8 /* HotViewController.h */,
+				5D4C964C1EDA95EF006D12C8 /* HotViewController.m */,
+				5D4C964E1EDA95FE006D12C8 /* VideoViewController.h */,
+				5D4C964F1EDA95FE006D12C8 /* VideoViewController.m */,
+				5D4C96511EDA9608006D12C8 /* SocialViewController.h */,
+				5D4C96521EDA9608006D12C8 /* SocialViewController.m */,
+				5D4C96541EDA9615006D12C8 /* SubscribeViewController.h */,
+				5D4C96551EDA9615006D12C8 /* SubscribeViewController.m */,
+				5D4C96571EDA9626006D12C8 /* TechnologyViewController.h */,
+				5D4C96581EDA9626006D12C8 /* TechnologyViewController.m */,
+			);
+			name = ChildViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +189,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D4C96341EDA94D8006D12C8 /* ViewController.m in Sources */,
+				5D4C964A1EDA95E0006D12C8 /* TopNewsViewController.m in Sources */,
+				5D4C96501EDA95FE006D12C8 /* VideoViewController.m in Sources */,
+				5D4C96531EDA9608006D12C8 /* SocialViewController.m in Sources */,
+				5D4C964D1EDA95EF006D12C8 /* HotViewController.m in Sources */,
+				5D4C96561EDA9615006D12C8 /* SubscribeViewController.m in Sources */,
+				5D4C96591EDA9626006D12C8 /* TechnologyViewController.m in Sources */,
 				5D4C96311EDA94D8006D12C8 /* AppDelegate.m in Sources */,
 				5D4C962E1EDA94D8006D12C8 /* main.m in Sources */,
 			);
@@ -311,6 +355,7 @@
 				5D4C96421EDA94D8006D12C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
